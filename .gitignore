@@ -4,6 +4,7 @@
 # Python
 *.pyc
 __pycache__
+env/
 
 # C++
 *.out

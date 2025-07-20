@@ -1,1 +1,2 @@
 CUDA passed
+TRITON works
