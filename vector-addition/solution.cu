@@ -36,9 +36,9 @@ int main() {
     float C[N];
 
     float *d_A, *d_B, *d_C;
-    CUDACHECK(cudaMalloc(&d_A, N * sizeof(float)));
-    CUDACHECK(cudaMalloc(&d_B, N * sizeof(float)));
-    CUDACHECK(cudaMalloc(&d_C, N * sizeof(float)));
+    CUDACHECK(cudaMalloc(&d_A, N * sizeof(float)));  // modifies the ptr location of d_A
+    CUDACHECK(cudaMalloc(&d_B, N * sizeof(float)));  // hence why we need to pass the
+    CUDACHECK(cudaMalloc(&d_C, N * sizeof(float)));  // pointer itself by reference
 
     CUDACHECK(cudaMemcpy(d_A, A, N * sizeof(float), cudaMemcpyHostToDevice));
     CUDACHECK(cudaMemcpy(d_B, B, N * sizeof(float), cudaMemcpyHostToDevice));
