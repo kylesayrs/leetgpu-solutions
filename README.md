@@ -5,5 +5,5 @@ Cuda and Triton solutions to challenges posted on [leetgpu.com](leetgpu.com).
 | Challenge | Difficulty | Completed |
 | --------- | ---------- | --------- |
 | Vector Addition | Easy | ✅ | 
-| Matrix Multiplication | Easy | |
+| Matrix Multiplication | Easy | Partial |
 | Matrix Transpose | Easy | ✅ |
